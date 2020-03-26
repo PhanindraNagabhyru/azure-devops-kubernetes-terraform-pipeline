@@ -12,6 +12,9 @@ pool:
 steps:
 - script: echo k8's!
   displayName: 'run a k8'  
+- task: DownloadSecureFile@1
+  inputs:
+      secureFile: 'azure_rsa.pub'
 - task: TerraformCLI@0
   inputs:
     command: 'init'
