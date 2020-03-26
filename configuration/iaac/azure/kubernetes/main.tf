@@ -42,7 +42,7 @@ resource "azurerm_kubernetes_cluster" "terraform-k8s" {
     Environment = var.environment
   }
   network_profile {
-    network_plugin = azure
+    network_plugin = "azure"
   }
 }
 
