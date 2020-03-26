@@ -2,6 +2,10 @@ output "resource_group" {
     value = azurerm_resource_group.resource_group
 }
 
+output "terraform-k8s" {
+    value = azurerm_kubernetes_cluster.name
+}
+
 output "storage_account_name" {
     value = azurerm_storage_account.storage_account.name
 }
